@@ -1,0 +1,20 @@
+name: sbt test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: coursier/setup-action@v1
+    - name: Install Verilator
+      run: sudo apt-get update -y && sudo apt-get install -y verilator
+    - name: Run tests
+      run: (cd kd-tree-chisel && sbt test)
