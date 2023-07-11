@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'kd_tree_chisel/**'
   pull_request:
     branches:
       - master
+    paths:
+      - 'kd_tree_chisel/**'
 
 jobs:
   test:
