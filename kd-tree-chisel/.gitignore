@@ -12,6 +12,7 @@ target/
 project/target/
 in/
 out/
+.bsp/
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
