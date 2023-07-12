@@ -72,3 +72,8 @@ val pointElemWidth = 4
 val pRomAddressWidth = 3
 def module = KdTreeModule.fromKdTree(tree, pointElemWidth, pRomAddressWidth)
 ```
+
+## Publications
+This generator was developed for the purposes of a [master's thesis](https://github.com/konda-x1/nns-master-thesis) at the [Faculty of Engineering, University of Kragujevac](http://fink.rs/en/). Also, the following paper about the generator has been published:
+
+* Aleksandar Z. Kondić and Vladmir M. Milovanović. “Hardware Realization of Nearest Neighbour Search Algorithm over an In-Memory Pre-Stored k-d Tree”. In: PROCEEDINGS IX International Conference IcETRAN and LXVI ETRAN Conference, Novi Pazar, Serbia, 6&ndash;9. June, 2022. ETRAN Society, Belgrade, pp. 1&ndash;6. ISBN: 978-86-7466-930-3. [PDF](https://www.etran.rs/2022/zbornik/ICETRAN-22_radovi/041-ELI1.4.pdf)
